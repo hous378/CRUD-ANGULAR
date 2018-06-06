@@ -1,0 +1,33 @@
+<div class="card mt-4">
+  <div class="card-header text-white bg-primary">
+    Liste des Comptes
+  </div>
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Numero</th>
+          <th class='w-50'>Properitaire</th>
+          <th>Solde</th>
+          <th class='w-20'></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor='let c of comptes'>
+          <td>{{c.numero}}</td>
+          <td>{{c.prop}}</td>
+          <td>{{c.solde}}</td>
+          <td><button type="button" class="btn btn-sm btn-info ml-1">Détail</button>
+          <button type="button" class="btn btn-sm btn-primary ml-1">Edit</button>
+          <button type="button" class="btn btn-sm btn-danger ml-1">delete</button>
+
+        </td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="card-footer text-muted">
+
+  </div>
+</div>
