@@ -19,7 +19,7 @@
           <td>{{c.solde}}</td>
           <td><button type="button" class="btn btn-sm btn-info ml-1">Détail</button>
           <button type="button" class="btn btn-sm btn-primary ml-1">Edit</button>
-          <button type="button" class="btn btn-sm btn-danger ml-1">delete</button>
+          <button type="button" class="btn btn-sm btn-danger ml-1" [routerLink]="['/delete/',c.numero]">delete</button>
 
         </td>
 

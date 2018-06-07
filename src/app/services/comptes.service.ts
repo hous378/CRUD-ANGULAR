@@ -18,4 +18,17 @@ getAllComptes(): Observable<Compte[]> {
   );
 }
 
+addCompte(compte: Compte): Observable<any> {
+return this._http.post(this.url, compte);
+}
+
+getCompteByID(id: string): Observable<Compte> {
+return this._http.get<Compte>(this.url + '/' + id);
+}
+
+deleteCompteById(id: string): Observable<any> {
+  console.log(this.url + '/' + id);
+  return this._http.delete(this.url + '/' + id);
+}
+
 }
